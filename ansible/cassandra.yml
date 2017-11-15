@@ -1,0 +1,8 @@
+---
+
+- name: Install cassandra with roles playbook
+  hosts: all
+
+  roles:
+    - cassandra
+

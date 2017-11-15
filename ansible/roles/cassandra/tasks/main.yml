@@ -1,0 +1,37 @@
+---
+
+- name: add datastax repo
+  yum_repository:
+    name: datastax
+    description: DataStax Repo for Apache Cassandra
+    baseurl: http://rpm.datastax.com/community
+    gpgcheck: no
+    enabled: yes
+  become: true
+
+- name: Install dsc20
+  yum:
+    name: dsc20
+    state: present
+  become: true
+
+- name: fix permissions
+  file:
+    path: /var/log/cassandra
+    state: directory
+    mode: 0755
+    owner: cassandra
+    group: cassandra
+    recurse: yes
+  become: true
+
+- name: fix permissions
+  file:
+    path: /var/lib/cassandra
+    state: directory
+    mode: 0755
+    owner: cassandra
+    group: cassandra
+    recurse: yes
+  become: true
+
