@@ -17,7 +17,7 @@ variable "key_name" {
 }
 
 variable "bastion_ami" {
-  default = "ami-9fa343e7"
+  default = "ami-1234567"
 }
 
 variable "bastion_instance_type" {
@@ -25,7 +25,7 @@ variable "bastion_instance_type" {
 }
 
 variable "cassandra_ami" {
-  default = "ami-87814bff"
+  default = "ami-12345678"
 }
 
 variable "cassandra_instance_type" {
