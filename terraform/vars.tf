@@ -33,9 +33,9 @@ variable "cassandra_instance_type" {
 }
 
 variable "as_min_size" {
-  default = "3"
+  default = "4"
 }
 
 variable "as_max_size" {
-  default = "3"
+  default = "4"
 }
