@@ -12,6 +12,6 @@ If you want to use it (just for fun), you have to do some pre-requirements:
 6. Launch terraform. In the end you will get an output with public address of load balancer. Through that you can access your cassandra cluster with default credentials.
 
 Detailed description of all the stuff is available here:
-https://medium.com/@dexnov17/first-experience-deploying-cassandra-on-aws-4a1b93af311d
+https://medium.com/devoops-and-universe/first-experience-deploying-cassandra-on-aws-4a1b93af311d
 
 CAUTION! Launching this could cost you money!
